@@ -1,0 +1,35 @@
+{
+  "id": "torchbearer",
+  "version": "0.1.0",
+  "title": "Torchbearer 2e",
+  "url": "https://github.com/coreyhickson/torchbearer-2e",
+  "description": "A Torchbearer 2e system.",
+  "license": "LICENSE.txt",
+  "authors": [
+    {
+      "name": "Corey Hickson",
+      "url": "https://github.com/coreyhickson"
+    }
+  ],
+  "esmodules": [
+    "module/torchbearer.js"
+  ],
+  "styles": [
+    "styles/simple.css"
+  ],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10.288",
+    "maximum": "10"
+  },
+  "manifest": "https://raw.githubusercontent.com/foundryvtt/torchbearer/master/system.json",
+  "download": "https://github.com/foundryvtt/torchbearer/archive/refs/tags/release-072.zip"
+}

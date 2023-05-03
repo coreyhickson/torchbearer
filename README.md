@@ -1,3 +1,3 @@
-# torchbearer
+# Simple Worldbuilding System
 
-A Foundry VTT module for Torchbearer
+A simple game system for Foundry VTT which allows for flexible definition of Actors and Items to assist with torchbearer or for running games which do not have a more complete system implementation available.
