@@ -1,10 +1,10 @@
 import { EntitySheetHelper } from "../helpers/helper.js";
 
 /**
- * Extend the base Actor document to support attributes and groups with a custom template creation dialog.
+ * Extend the base Actor document for a Torchbearer character.
  * @extends {Actor}
  */
-export class SimpleActor extends Actor {
+export class TorchbearerActor extends Actor {
 
   /** @inheritdoc */
   prepareDerivedData() {

@@ -1,4 +1,3 @@
-import { EntitySheetHelper } from "./helper.js";
 import { ATTRIBUTE_TYPES } from "../documents/constants.js";
 
 /**

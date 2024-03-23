@@ -15,7 +15,7 @@
     "module/torchbearer.js"
   ],
   "styles": [
-    "styles/simple.css"
+    "styles/torchbearer.css"
   ],
   "packs": [],
   "languages": [
