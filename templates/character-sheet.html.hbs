@@ -2,6 +2,12 @@
 
     {{!-- Sheet Header --}}
     <header class="sheet-header">
+        <h1 class="charname">
+            <input name="name" type="text" value="{{data.name}}" placeholder="Name" />
+        </h1>
+
+
+
         <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" height="100" width="100" />
         <div class="header-fields">
             <h1 class="charname">
@@ -20,7 +26,7 @@
         </div>
     </header>
 
-    {{!-- Sheet Tab Navigation --}}
+    {{!-- Sheet Tab Navigation
     <nav class="sheet-tabs tabs" data-group="primary">
         <a class="item" data-tab="description">Description</a>
         <a class="item" data-tab="items">Items</a>
@@ -111,5 +117,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 </form>

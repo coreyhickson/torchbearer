@@ -30,3 +30,30 @@ exports.default = gulp.series(
   watchUpdates
 );
 exports.css = css;
+
+// Add fonts
+_configureFonts();
+
+/* -------------------------------------------- */
+
+/**
+ * Configure additional system fonts.
+ */
+function _configureFonts() {
+  // Object.assign(CONFIG.fontDefinitions, {
+  //   "Inknut Antiqua": {
+  //     editor: true,
+  //     fonts: [
+  //       { urls: ["systems/torchbearer/fonts/Inknut_Antiqua/InknutAntiqua-Regular.ttf"] },
+  //       { urls: ["systems/torchbearer/fonts/Inknut_Antiqua/InknutAntiqua-Bold.ttf"], weight: "bold" },
+  //     ]
+  //   },
+  //   "Architects Daughter": {
+  //     editor: true,
+  //     fonts: [
+  //       { urls: ["systems/torchbearer/fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf"] }
+  //     ]
+  //   }
+  // });
+}
+

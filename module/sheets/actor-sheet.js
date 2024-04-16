@@ -11,7 +11,7 @@ export class SimpleActorSheet extends ActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["torchbearer", "sheet", "actor"],
-      template: "systems/torchbearer/templates/actor-sheet.html",
+      template: "systems/torchbearer/templates/character-sheet.html.hbs",
       width: 600,
       height: 600,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }],
