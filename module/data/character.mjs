@@ -23,6 +23,22 @@ export default class TorchbearerCharacter extends TorchbearerActorBase {
       return obj;
     }, {}));
 
+    // These are the Torchbearer fields
+    // Who you are
+    // Stock, class, age, home, raiment, parents, mentor, friend, enemy, level
+    // Name is part of the base TypeDataModel fields
+    // TODO Maybe make this a structured schema field
+    schema.stock = new fields.StringField({blank: true, trim: true});
+    schema.class = new fields.StringField({blank: true, trim: true});
+    schema.age = new fields.NumberField({min: 0, integer: true, positive: true});
+    schema.home = new fields.StringField({blank: true, trim: true});
+    schema.raiment = new fields.StringField({blank: true, trim: true});
+    schema.parents = new fields.StringField({blank: true, trim: true});
+    schema.mentor = new fields.StringField({blank: true, trim: true});
+    schema.friend = new fields.StringField({blank: true, trim: true});
+    schema.enemy = new fields.StringField({blank: true, trim: true});
+    schema.level = new fields.NumberField({min: 0, integer: true, positive: true});
+
     return schema;
   }
 

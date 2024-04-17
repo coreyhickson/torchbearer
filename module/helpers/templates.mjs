@@ -5,6 +5,9 @@
  */
 export const preloadHandlebarsTemplates = async function () {
   return loadTemplates([
+    // Character partials
+    'systems/torchbearer/templates/actor/sections/anatomy.hbs',
+
     // Actor partials.
     'systems/torchbearer/templates/actor/parts/actor-features.hbs',
     'systems/torchbearer/templates/actor/parts/actor-items.hbs',
