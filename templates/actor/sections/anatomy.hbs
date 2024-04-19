@@ -1,13 +1,67 @@
-<div class="tab anatomy" data-group="primary" data-tab="anatomy">
-  <section class="grid grid-6col">
-    <section class="main grid-span-2">
-      One
-    </section>
-    <section class="second grid-span-1">
-      Two
-    </section>
-    <section class="third grid-span-3">
-      Three
-    </section>
+<section class="grid grid-6col">
+  {{!-- First column --}}
+  <section class="main grid-span-2">
+    {{!-- Who you are --}}
+    <div class="resource flex-group-center">
+      <label for="actor.name" class="resource-label">Name:</label>
+      <input class="resource-content" name="name" type="text" value="{{actor.name}}" placeholder="Name" />
+    </div>
+    <div class="resource flex-group-center">
+      <label for="system.whoYouAre.stock" class="resource-label">Stock:</label>
+      <input class="resource-content" name="system.whoYouAre.stock" for="system.whoYouAre.stock" type="text"
+        data-dtype="String" value="{{system.whoYouAre.stock}}" />
+    </div>
+    <div class="resource flex-group-center">
+      <label for="system.whoYouAre.class" class="resource-label">Class:</label>
+      <input class="resource-content" name="system.whoYouAre.class" for="system.whoYouAre.class" type="text"
+        data-dtype="String" value="{{system.whoYouAre.class}}" />
+    </div>
+    <div class="resource flex-group-center">
+      <label for="system.whoYouAre.age" class="resource-label">Age:</label>
+      <input class="resource-content" name="system.whoYouAre.age" for="system.whoYouAre.age" type="number"
+        data-dtype="Number" value="{{system.whoYouAre.age}}" />
+    </div>
+    <div class="resource flex-group-center">
+      <label for="system.whoYouAre.home" class="resource-label">Home:</label>
+      <input class="resource-content" name="system.whoYouAre.home" for="system.whoYouAre.home" type="text"
+        data-dtype="String" value="{{system.whoYouAre.home}}" />
+    </div>
+    <div class="resource flex-group-center">
+      <label for="system.whoYouAre.raiment" class="resource-label">Raiment:</label>
+      <input class="resource-content" name="system.whoYouAre.raiment" for="system.whoYouAre.raiment" type="text"
+        data-dtype="String" value="{{system.whoYouAre.raiment}}" />
+    </div>
+    <div class="resource flex-group-center">
+      <label for="system.whoYouAre.parents" class="resource-label">Parents:</label>
+      <input class="resource-content" name="system.whoYouAre.parents" for="system.whoYouAre.parents" type="text"
+        data-dtype="String" value="{{system.whoYouAre.parents}}" />
+    </div>
+    <div class="resource flex-group-center">
+      <label for="system.whoYouAre.mentor" class="resource-label">Mentor:</label>
+      <input class="resource-content" name="system.whoYouAre.mentor" for="system.whoYouAre.mentor" type="text"
+        data-dtype="String" value="{{system.whoYouAre.mentor}}" />
+    </div>
+    <div class="resource flex-group-center">
+      <label for="system.whoYouAre.friend" class="resource-label">Friend:</label>
+      <input class="resource-content" name="system.whoYouAre.friend" for="system.whoYouAre.friend" type="text"
+        data-dtype="String" value="{{system.whoYouAre.friend}}" />
+    </div>
+    <div class="resource flex-group-center">
+      <label for="system.whoYouAre.enemy" class="resource-label">Enemy:</label>
+      <input class="resource-content" name="system.whoYouAre.enemy" for="system.whoYouAre.enemy" type="text"
+        data-dtype="String" value="{{system.whoYouAre.enemy}}" />
+    </div>
+    <div class="resource flex-group-center">
+      <label for="system.whoYouAre.level" class="resource-label">Level:</label>
+      <input class="resource-content" name="system.whoYouAre.level" for="system.whoYouAre.level" type="number"
+        data-dtype="Number" value="{{system.whoYouAre.level}}" />
+    </div>
   </section>
-</div>
+  {{!-- Second column --}}
+  <section class="second grid-span-1">
+    Two
+  </section>
+  <section class="third grid-span-3">
+    Three
+  </section>
+</section>

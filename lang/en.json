@@ -1,5 +1,8 @@
 {
   "TORCHBEARER": {
+    "WhoYouAre": {
+      "Name": "Name"
+    },
     "Ability": {
       "Str": { "long": "Strength", "abbr": "str" },
       "Con": { "long": "Constitution", "abbr": "con" },

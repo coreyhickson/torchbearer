@@ -27,17 +27,18 @@ export default class TorchbearerCharacter extends TorchbearerActorBase {
     // Who you are
     // Stock, class, age, home, raiment, parents, mentor, friend, enemy, level
     // Name is part of the base TypeDataModel fields
-    // TODO Maybe make this a structured schema field
-    schema.stock = new fields.StringField({blank: true, trim: true});
-    schema.class = new fields.StringField({blank: true, trim: true});
-    schema.age = new fields.NumberField({min: 0, integer: true, positive: true});
-    schema.home = new fields.StringField({blank: true, trim: true});
-    schema.raiment = new fields.StringField({blank: true, trim: true});
-    schema.parents = new fields.StringField({blank: true, trim: true});
-    schema.mentor = new fields.StringField({blank: true, trim: true});
-    schema.friend = new fields.StringField({blank: true, trim: true});
-    schema.enemy = new fields.StringField({blank: true, trim: true});
-    schema.level = new fields.NumberField({min: 0, integer: true, positive: true});
+    schema.whoYouAre = new fields.SchemaField({
+      stock: new fields.StringField({ blank: true, trim: true }),
+      class: new fields.StringField({ blank: true, trim: true }),
+      age: new fields.NumberField({ min: 0, integer: true, positive: true }),
+      home: new fields.StringField({ blank: true, trim: true }),
+      raiment: new fields.StringField({ blank: true, trim: true }),
+      parents: new fields.StringField({ blank: true, trim: true }),
+      mentor: new fields.StringField({ blank: true, trim: true }),
+      friend: new fields.StringField({ blank: true, trim: true }),
+      enemy: new fields.StringField({ blank: true, trim: true }),
+      level: new fields.NumberField({ min: 0, integer: true, positive: true }),
+    });
 
     return schema;
   }
@@ -58,7 +59,7 @@ export default class TorchbearerCharacter extends TorchbearerActorBase {
     // Copy the ability scores to the top level, so that rolls can use
     // formulas like `@str.mod + 4`.
     if (this.abilities) {
-      for (let [k,v] of Object.entries(this.abilities)) {
+      for (let [k, v] of Object.entries(this.abilities)) {
         data[k] = foundry.utils.deepClone(v);
       }
     }
